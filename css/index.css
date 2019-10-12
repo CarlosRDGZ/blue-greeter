@@ -1,23 +1,29 @@
+@font-face {
+  font-family: 'Kelson';
+  src: url('../fonts/KelsonSans-Bold.ttf');
+  font-weight: bold
+}
+
 body {
-    margin: 0;
+  margin: 0;
 }
 
 .columns {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr)
+  display: grid;
+  grid-template-columns: repeat(3, 1fr)
 }
 
 .left {
-    grid-column: 1;
-    background-color: #020524;
+  grid-column: 1;
+  background-color: #020524;
 }
 
 .right {
-    grid-column: 2 / 4
+  grid-column: 2 / 4
 }
 
 .container {
-    margin: 0 100px;
+  margin: 0 100px;
 }
 
 .input {
@@ -26,13 +32,19 @@ body {
     box-sizing: border-box;
 }
 
+h1.sign-in {
+  color: white;
+  margin: 0 0 20px 0;
+  font-family: 'Kelson';
+}
+
 .input-blue {
-    font-family: Roboto;
-    color: azure;
-    font-size: 14px;
-    padding: 14px;
-    background-color: rgba(44, 46, 74, 0.9);
-    border: 0 solid #fff;
-    margin-bottom: 10px;
-    border-radius: 5px;
+  font-family: Roboto;
+  color: azure;
+  font-size: 14px;
+  padding: 14px;
+  background-color: rgba(44, 46, 74, 0.9);
+  border: 0 solid #fff;
+  margin-bottom: 10px;
+  border-radius: 1px;
 }
