@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+}
+
+.columns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr)
+}
+
+.left {
+    grid-column: 1;
+    background-color: #020524;
+}
+
+.right {
+    grid-column: 2 / 4
+}
+
+.container {
+    overflow: hidden;
+    margin: 0 80px;
+}
+
+.input {
+    width: 90%;
+}
+
+.input-blue {
+    display: block;
+    font-family: Roboto;
+    color: azure;
+    font-size: 14px;
+    padding: 14px;
+    background-color: rgba(44, 46, 74, 0.9);
+    border: 0 solid #fff;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
