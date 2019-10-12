@@ -17,16 +17,16 @@ body {
 }
 
 .container {
-    overflow: hidden;
-    margin: 0 80px;
+    margin: 0 100px;
 }
 
 .input {
-    width: 90%;
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
 }
 
 .input-blue {
-    display: block;
     font-family: Roboto;
     color: azure;
     font-size: 14px;
