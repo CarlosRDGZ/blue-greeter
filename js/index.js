@@ -1,3 +1,5 @@
+const lblDate = document.getElementById('date')
+const lblClock = document.getElementById('clock')
 const inpUser = document.getElementById('user')
 const inpPassword = document.getElementById('password')
 const imgUserPhoto = document.getElementById('user-photo')
@@ -34,7 +36,21 @@ function setBackground() {
 
   localStorage.setItem('backgroundIndex', selectedIndex)
   imgBackground.src = 'images/' + images[selectedIndex]
-  // imgBackground.height = screen.height
+}
+
+function clock() {
+  let date = new Date()
+
+  let hour = date.getHours()
+  let minutes = date.getMinutes()
+
+  if (hour < 10) hour = '0' + hour
+  if (minutes < 10) minutes = '0' + minutes
+
+  lblDate.textContent = date.toDateString()
+  lblClock.textContent = `${hour}:${minutes}`
+
+  setTimeout(clock, 1000)
 }
 
 function random(n) {
@@ -56,6 +72,7 @@ function authentication_complete() {
 }
 
 window.onload = function() {
+  this.clock()
   this.setBackground()
   this.setUserInfo(lightdm.users[0])
 }
