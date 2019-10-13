@@ -34,7 +34,7 @@ function setBackground() {
 
   localStorage.setItem('backgroundIndex', selectedIndex)
   imgBackground.src = 'images/' + images[selectedIndex]
-  imgBackground.height = screen.height - 1
+  // imgBackground.height = screen.height
 }
 
 function random(n) {

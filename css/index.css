@@ -21,6 +21,7 @@ html, body {
 }
 
 .right {
+  overflow: hidden;
   grid-column: 2 / 4
 }
 
@@ -29,9 +30,9 @@ html, body {
 }
 
 .input {
-    width: 100%;
-    display: block;
-    box-sizing: border-box;
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
 }
 
 h1.sign-in {
@@ -99,8 +100,7 @@ h1.sign-in {
   margin: 0;
 }
 
-/* #images {
-  width: 100%;
+#background {
   height: 100%;
-  background-image: url('../images/tom\ gronk.jpg')
-} */
+  overflow: hidden;
+}
