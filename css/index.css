@@ -17,7 +17,7 @@ html, body {
 
 .left {
   grid-column: 1;
-  background-color: #020524;
+  background-color: #000f1c;
 }
 
 .right {
@@ -25,7 +25,7 @@ html, body {
 }
 
 .container {
-  margin: 30% 100px 0 100px;
+  margin: 30% 70px 0 70px;
 }
 
 .input {
@@ -41,14 +41,14 @@ h1.sign-in {
 }
 
 .input-blue {
-  color: azure;
-  font-size: 14px;
-  padding: 14px;
-  border: 0 solid #fff;
-  margin-bottom: 10px;
+  color: #8da2b1;
+  font-size: 15px;
+  padding: 20px;
+  border-style: none;
   border-radius: 1px;
-  font-family: Roboto;
-  background-color: rgba(44, 46, 74, 0.9);
+  margin-bottom: 10px;
+  font-family: 'Kelson';
+  background-color: #0f2231;
 }
 
 #user-photo {
@@ -57,4 +57,18 @@ h1.sign-in {
   display: block;
   border-radius: 2px;
   margin: 0 auto 20px auto;
+}
+
+#theme-switcher {
+  bottom: 0;
+  margin: 0 70px 30px;
+  position: absolute;
+}
+
+#theme-switcher p, #theme-switcher a {
+  display: inline;
+  font-size: 12px;
+  color: #7c91a2;
+  font-family: 'Kelson';
+  margin: 0;
 }
