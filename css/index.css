@@ -59,6 +59,32 @@ h1.sign-in {
   margin: 0 auto 20px auto;
 }
 
+.text-right {
+  text-align: right;
+}
+
+.btn {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  font-size: 24px;
+  font-family: 'Kelson';
+  margin-left: auto;
+  right: 0;
+}
+
+.btn-login {
+  color: #122534;
+  border: solid #122534 2px;  
+  background-color: #000f1c;
+}
+
+.btn-login:active {
+  color: #7c91a2;
+  border: solid #7c91a2 2px;  
+  background-color: #000f1c;
+}
+
 #theme-switcher {
   bottom: 0;
   margin: 0 70px 30px;

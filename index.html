@@ -9,12 +9,15 @@
 <body>
   <div class="columns">
     <div class="left">
-      <div class="container">
+      <form id="login-form" action="javascript: provideSecret();" class="container">
         <!-- <h1 class="sign-in">SIGN IN</h1> -->
         <img id="user-photo">
         <span id="user" class="input input-blue" type="text" disabled value=""></span>
-        <input class="input input-blue" type="password">
-      </div>
+        <input id="password" class="input input-blue" type="password">
+        <div class="text-right">
+          <button id="login-button" class="btn btn-login" type="submit">></button>
+        </div>
+      </form>
       <div id="theme-switcher">
         <p>SESSION: </p>
         <a id="current-theme" href="#">i3</a>
